@@ -649,7 +649,6 @@ public:
             // pushing layer to the end of graph
             graph.push_back(layer);
             
-
             numberLoperations();
             removeRedundantBraces();
             layerNum++;
