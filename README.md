@@ -17,17 +17,16 @@ calculating performance parameters of executing the expression against single co
 <li>Calculation of execution time on Vector System</li>
 <li>Acceleration and efficiency factors</li>
 <li><strong>Expression execution visualization on the Vector System with custom parameters</strong></li>
-<li>Syntax checks</li>
 </ul>
 
 <h2>Screenshots:</h2>
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52543069158/in/dateposted-public/" title="screenshot-1"><img src="https://live.staticflickr.com/65535/52543069158_5df1f0fa82_z.jpg" width="640" height="372" alt="screenshot-1"></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52543069158/in/dateposted-public/" title="screenshot-1"><img src="https://live.staticflickr.com/65535/52543069158_5df1f0fa82_c.jpg" width="800" height="465" alt="screenshot-1"></a>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52542817494/in/dateposted-public/" title="screenshot-2"><img src="https://live.staticflickr.com/65535/52542817494_e19cf3441c_z.jpg" width="640" height="391" alt="screenshot-2"></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52542817494/in/dateposted-public/" title="screenshot-2"><img src="https://live.staticflickr.com/65535/52542817494_e19cf3441c_c.jpg" width="800" height="489" alt="screenshot-2"></a>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52542062182/in/dateposted-public/" title="screenshot-3"><img src="https://live.staticflickr.com/65535/52542062182_f7fb7f2d37_z.jpg" width="640" height="382" alt="screenshot-3"></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52542062182/in/dateposted-public/" title="screenshot-3"><img src="https://live.staticflickr.com/65535/52542062182_f7fb7f2d37_c.jpg" width="800" height="478" alt="screenshot-3"></a>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52542522711/in/dateposted-public/" title="screenshot-4"><img src="https://live.staticflickr.com/65535/52542522711_17a8554066_z.jpg" width="640" height="421" alt="screenshot-4"></a>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52542522711/in/dateposted-public/" title="screenshot-4"><img src="https://live.staticflickr.com/65535/52542522711_17a8554066_c.jpg" width="800" height="527" alt="screenshot-4"></a>
 
 <h2>Tips:</h2>
 Project works with msvc compiler from <a href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022">Microsoft Build Tools</a>.
