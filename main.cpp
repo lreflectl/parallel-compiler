@@ -768,12 +768,6 @@ public:
     {
         this->expression = expression;
         this->graph = graph;
-
-        fillDependencyGraph();
-        setStartingTimeOnDepGraph();
-        calcCoefs();
-        printDependencies();
-
     }
 
     void fillDependencyGraph()
@@ -1026,11 +1020,43 @@ public:
         cout << endl;
     }
 
+    void execute_calculations()
+    {
+        fillDependencyGraph();
+        setStartingTimeOnDepGraph();
+        calcCoefs();
+        printDependencies();    
+    }
+
+    void set_conveyors_count(int div_cores, int mul_cores, int sub_cores, int add_cores)
+    {
+        if (div_cores > 0 && mul_cores > 0 && sub_cores > 0 && add_cores > 0) {
+            cores[0] = div_cores;
+            cores[1] = mul_cores;
+            cores[2] = sub_cores;
+            cores[3] = add_cores;
+        } else {
+            cout << "Wrong conveyors count, leaving default.\n";
+        }
+    }
+
+    void set_operation_layers_count(int div_layers, int mul_layers, int sub_layers, int add_layers)
+    {
+        if (div_layers > 0 && mul_layers > 0 && sub_layers > 0 && add_layers > 0) {
+            opLayers[0] = div_layers;
+            opLayers[1] = mul_layers;
+            opLayers[2] = sub_layers;
+            opLayers[3] = add_layers;
+        } else {
+            cout << "Wrong operation layers count, leaving default.\n";
+        }
+    }
+
 private:
     string expression;
     vector<string> operations {"/", "*", "-", "+"};
     vector<int>         cores { 1,   1,   0,   2 };  // specialized conveyors
-    vector<int>      opLayers { 4,   3,   2,   2 };  // layers
+    vector<int>      opLayers { 4,   3,   2,   2 };  // the conveyors' layers (tied uo with operation time)
     vector<vector<string>> graph;
     vector<vector<int>> depGraph;
     vector<vector<pair<string, int>>> dataGraph;
@@ -1082,6 +1108,9 @@ int main()
         vector<vector<string>> graph = tokenizer.getGraph();
 
         VectorSystem vecSys(graph, expression);
+        vecSys.set_conveyors_count(1,1,1,1);
+        vecSys.set_operation_layers_count(12, 6, 4, 4);
+        vecSys.execute_calculations();
     }
 
     return 0;
