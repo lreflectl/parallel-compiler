@@ -20,6 +20,8 @@ calculating performance parameters of executing the expression against single co
 </ul>
 
 <h2>Screenshots:</h2>
+<p>Dependent operations marked as e.g. <strong>0L0</strong>, where the first number is id of graph layer, 
+and the second after L is id of an operation on that layer</p>
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52543069158/in/dateposted-public/" title="screenshot-1"><img src="https://live.staticflickr.com/65535/52543069158_5df1f0fa82_c.jpg" width="800" height="465" alt="screenshot-1"></a>
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/197052252@N02/52542817494/in/dateposted-public/" title="screenshot-2"><img src="https://live.staticflickr.com/65535/52542817494_e19cf3441c_c.jpg" width="800" height="489" alt="screenshot-2"></a>
