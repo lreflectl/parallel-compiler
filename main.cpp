@@ -5,6 +5,7 @@
 #include <regex>
 #include <algorithm>
 #include <iomanip>
+#include <fstream>
 
 
 using namespace std;
@@ -1034,20 +1035,39 @@ private:
     vector<vector<int>> depGraph;
     vector<vector<pair<string, int>>> dataGraph;
     vector<vector<vector<string>>> taskView;
-    vector<int> opTime { 1,   1,   1,   1 };
     int singleCoreTimer = 0;
     int vectorSysTimer = 0;
     int layersNum = 0;
 };
 
 
+string read_expression_from_file(string &filename)
+{
+    fstream fs;
+    fs.open(filename, fstream::in);
+    if (fs.is_open()){
+        cout << "Reading expression from file...\n";
+        string expression = "";
+        while (!fs.eof())
+        {
+            fs >> expression;
+        }
+        return expression;
+    }
+    
+    return string{"File read failed"}; 
+    fs.close();
+}
+
+
 int main()
 {
-    
     // string expression = "888*317-K+(785*P+535)/50+F+197*(356-72/6+T)"; // #3
     // string expression = "a/b/c/d+m*(z-k*4-f-r)+5+n*x*y*l-e"; // #2
-    string expression = "a+b*(c-d-e+(l+k)/t)";  // #1
-    // string expression = "a/b/c/d+m*(z-k*4-f-r)+5+n*x*y*l-e";
+    // string expression = "a+b*(c-d-e+(l+k)/t)";  // #1
+
+    string filename{"expression_example.txt"};
+    string expression = read_expression_from_file(filename);
 
     cout << "User expression:" << endl;
     cout << expression << endl << endl;
